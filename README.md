@@ -1,11 +1,11 @@
-# compilerfuse_jd169
+# tensor_parallel_split_length_profile
 
 **统计编译器与算子融合专家·张量并行切分策略各部分的长度占比并标出异常。**
 
-`compilerfuse_jd169` —— 按段落统计编译器与算子融合专家·张量并行切分策略相关的长度分布，标出过长、过短与重复表达的部分
+`tensor_parallel_split_length_profile` —— 按段落统计编译器与算子融合专家·张量并行切分策略相关的长度分布，标出过长、过短与重复表达的部分
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`compilerfuse_jd169.py` 拷走就能用
+- 单文件，`tensor_parallel_split_length_profile.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install chestclove-compilerfuse_jd169
+pip install chestclove-tensor_parallel_split_length_profile
 ```
 
 装完直接用命令名调用：
 
 ```bash
-compilerfuse_jd169 --help
+tensor_parallel_split_length_profile --help
 ```
 
-也可以不用安装，直接把 `compilerfuse_jd169.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `tensor_parallel_split_length_profile.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ compilerfuse_jd169 --help
 ## 用法
 
 ```bash
-python compilerfuse_jd169.py --file input.txt
-python compilerfuse_jd169.py --text "示例内容"
-python compilerfuse_jd169.py --file input.txt --json
+python tensor_parallel_split_length_profile.py --file input.txt
+python tensor_parallel_split_length_profile.py --text "示例内容"
+python tensor_parallel_split_length_profile.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python compilerfuse_jd169.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_compilerfuse_jd169.py
+python test_tensor_parallel_split_length_profile.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_compilerfuse_jd169.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/chestclove/compilerfuse_jd169>
+- GitHub 仓库：<https://github.com/chestclove/tensor_parallel_split_length_profile>
 
 ---
 
@@ -79,7 +79,7 @@ python test_compilerfuse_jd169.py
 chestclove 做编译器与算子融合专家·张量并行切分策略相关的问题，方向对标网易的资深编译器与算子融合专家岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://chestclove.github.io>
-- 仓库：<https://github.com/chestclove/compilerfuse_jd169>
+- 仓库：<https://github.com/chestclove/tensor_parallel_split_length_profile>
 
 ## 许可
 

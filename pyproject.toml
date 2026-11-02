@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chestclove-compilerfuse_jd169"
+name = "chestclove-tensor_parallel_split_length_profile"
 version = "0.1.0"
 description = "按段落统计编译器与算子融合专家·张量并行切分策略相关的长度分布，标出过长、过短与重复表达的部分"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://chestclove.github.io"
-Repository = "https://github.com/chestclove/compilerfuse_jd169"
-Issues = "https://github.com/chestclove/compilerfuse_jd169/issues"
+Repository = "https://github.com/chestclove/tensor_parallel_split_length_profile"
+Issues = "https://github.com/chestclove/tensor_parallel_split_length_profile/issues"
 
 [project.scripts]
-compilerfuse_jd169 = "compilerfuse_jd169:main"
+tensor_parallel_split_length_profile = "tensor_parallel_split_length_profile:main"
 
 [tool.setuptools]
-py-modules = ["compilerfuse_jd169"]
+py-modules = ["tensor_parallel_split_length_profile"]
